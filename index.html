@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Christ Official</title>
+<meta name="description" content="Christ Official — independent developer. Desktop apps, web tools, dan project-project lainnya.">
+<link rel="stylesheet" href="style.css?v=16">
+</head>
+<body>
+
+  <canvas id="galaxy-canvas"></canvas>
+  <div class="nebula-glow"></div>
+  <div class="vignette"></div>
+
+  <div class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="hero-tagline" id="brand-tagline-wrap">
+        <span id="brand-tagline"></span>
+      </p>
+      <h1 class="hero-brand" id="brand-name"></h1>
+      <div class="typewriter">
+        <span id="typewriter-text"></span><span class="cursor"></span>
+      </div>
+      <div class="hero-meta" aria-label="Specialties">
+        <span>desktop apps</span>
+        <i></i>
+        <span>web tools</span>
+        <i></i>
+        <span>live systems</span>
+      </div>
+      <div class="hero-console" role="status" aria-label="Current status">
+        <div class="console-line"><span class="console-prompt">></span><span>system.status</span><strong><b></b>online</strong></div>
+        <div class="console-line"><span class="console-prompt">></span><span>current.focus</span><strong>tools &amp; ideas</strong></div>
+        <div class="console-line"><span class="console-prompt">></span><span>build.version</span><strong>CO-2026.09</strong></div>
+      </div>
+      <div class="hero-signal-rail" aria-hidden="true">
+        <span>made with curiosity</span>
+        <i></i>
+        <span>running in the dark</span>
+        <i></i>
+        <span>always building</span>
+      </div>
+      <div class="scroll-hint">scroll buat lanjut</div>
+    </section>
+
+    <!-- LEADERBOARD -->
+    <section id="leaderboard">
+      <div class="leaderboard-head">
+        <div>
+          <p class="eyebrow"><span class="live-dot"></span>live</p>
+          <h2 id="lb-title">Panel Felix Tools</h2>
+        </div>
+        <span class="leaderboard-sub" id="lb-sub"></span>
+      </div>
+      <div class="lb-table">
+        <div class="lb-row lb-header">
+          <div>Nama</div>
+          <div>Role</div>
+          <div>Status</div>
+          <div>Sisa Waktu</div>
+        </div>
+        <div id="lb-body">
+          <div class="lb-empty">Memuat data…</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="eyebrow">work</p>
+      <h2>Project-project gua</h2>
+      <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <!-- SOCIALS -->
+    <section id="contact">
+      <p class="eyebrow">connect</p>
+      <h2>Hubungin gua</h2>
+      <div class="social-row" id="social-row"></div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Christ Official
+    </footer>
+
+  </div>
+
+  <!-- PHOTO WIDGET -->
+  <div class="photo-widget" id="photo-widget">
+    <div class="photo-frame">
+      <div class="stack" id="photo-stack"></div>
+      <div class="heart" id="photo-heart">❤</div>
+    </div>
+    <div class="photo-dots" id="photo-dots"></div>
+  </div>
+
+  <div class="photo-modal" id="photo-modal" aria-hidden="true">
+    <div class="photo-modal-backdrop" data-photo-close></div>
+    <div class="photo-modal-content" role="dialog" aria-modal="true" aria-label="My Girl">
+      <button class="photo-modal-close" type="button" data-photo-close aria-label="Tutup foto">×</button>
+      <img id="photo-modal-image" src="" alt="My Girl">
+      <p class="photo-modal-label">My Girl ❤</p>
+    </div>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="config.js?v=2"></script>
+  <script src="galaxy.js?v=7"></script>
+  <script src="app.js?v=4"></script>
+</body>
+</html>
