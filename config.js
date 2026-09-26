@@ -18,11 +18,11 @@ const CONFIG = {
   photoBox: {
     title: "My Girl ❤",
     images: [
-      "PICTURE-1",
-      "PICTURE-2",
-      "PICTURE-3",
-      "PICTURE-4",
-      "PICTURE-5"
+      "https://files.catbox.moe/72had6.jpeg",
+      "https://files.catbox.moe/nsfrz9.jpeg",
+      "https://files.catbox.moe/4bfu9s.jpeg",
+      "https://files.catbox.moe/wc67e9.jpeg",
+      "https://files.catbox.moe/ft06oh.jpeg"
     ],
     intervalMs: 5000
   },
